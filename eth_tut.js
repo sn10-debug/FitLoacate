@@ -1,5 +1,3 @@
-
-
 // web3.js is used by the developers to use the ethereum network
 
 // In the Case of Blockchain we want specific zeros at the starting of the hash because when the hash converted to a base 10 number it has be less than certain target number and therefore we want some zeros at the beginning to make it less than 0
@@ -24,7 +22,6 @@
 // We write smart contracts in Solidity Language which has extension '.sol' and this is then compiled with Solidity compiler and then converted into two segments and one segment consits of the byte source code and another segment consits of Application Binary Interface (ABI)
 
 // ABI acts as an Interface between Javascript and the Byte Code deployed into the Network and kind of it does a translation for the Javascript with some functions to interact with the data and also this is so plain that we can read and understand what the smart contract does
-
 
 `
 pragma solidity ^0.4.17;
@@ -77,31 +74,25 @@ contract Inbox{
     }
 }
 
-`
+`;
 
+class Car {
+  #pin = '1234';
+  constructor() {
+    this.Brand = 'Rolls';
+  }
 
-class Car{
-    #pin='1234'
-    constructor(){
-        this.Brand="Rolls"
-
-
-    }
-
-    get Name(){
-        return this.Brand
-    }
-
-
-
+  get Name() {
+    return this.Brand;
+  }
 }
 
-Car.prototype.getName=function(){
-    return this.Brand
-}
+Car.prototype.getName = function () {
+  return this.Brand;
+};
 
-let car1=new Car()
+let car1 = new Car();
 
-console.log(car1.pin)
-console.log(car1.getName())
-console.log(car1.getName)
+console.log(car1.pin);
+console.log(car1.getName());
+console.log(car1.getName);
